@@ -1,0 +1,3 @@
+center division for galary
+MSQL sata report er sata reprotin formatTa
+SSRS

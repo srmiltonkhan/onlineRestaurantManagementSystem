@@ -1,0 +1,102 @@
+body{
+	background-image: url("../images/admin_login/adminLoginPage.jpg");
+	background-repeat: repeat-x;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 100%; 
+	  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: ;
+	}
+.loginFormContainer {
+    width: 490px;
+    height: 400px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(105, 87, 134, 0.5);
+    border-radius: 25px;
+}
+.adminSubMenu form table tr td p{
+	margin-left: 20px;
+}
+.adminSubMenu {
+    width: 370px;
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: white;
+    height: 265spx;
+    box-shadow: 2px 0px 40px -3px #309bd0;
+}
+.adminSubMenu input[type=text], [type=password] {
+    margin-left: 20px;
+    width: 300px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+}
+
+.adminSubMenu input[type=checkbox]{
+	margin-left: 20px;
+}
+.adminSubMenu input[type=submit] {
+    background-color: #00004d;
+    border: none;
+    width: 125px;
+    height: 24px;
+    color: white;
+    float: right;
+    margin-bottom: 20px;
+}
+.adminSubMenu input[type=submit]:hover{
+    background-color: green;
+	cursor: pointer;
+	box-shadow: 2px 0px 40px -3px #aaaaaa;
+}
+.adminSubMenu form table tr td a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #00004d;
+}
+.adminSubMenu form table tr td a:hover {
+   color: green;
+}
+.loginFormContainer h2{
+	text-align: center;
+	font-family:sans-serif;
+	    color: #fff;
+}
+
+
+.title_animation{
+  position: relative;
+  margin-bottom: 500px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #0036f9, #fff, #8900ff);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}

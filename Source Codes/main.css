@@ -1,0 +1,855 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background-color: #d5dae5;
+}
+.logout{
+	float: right; 
+	display: inline-block;
+	margin-top: -54px;
+	position: relative;
+}
+
+.logout_content {
+	margin-left: -220px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 275px;
+    height: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	
+}
+
+.logout:hover .logout_content {
+  display: block;
+}
+.image_container{
+  width: 80px;
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.text_contents {
+    width: 160px;
+    float: right;
+}
+.username{
+    font-weight: bold;
+    text-transform: uppercase;
+	font-size:15px;
+	margin-top: 11px;
+}
+.sign_out button{
+    margin-top: 70px;
+    float: right;
+    height: 25px;
+    width: 100px;
+    margin-right: 10px;
+
+}
+.change_password button{
+    margin-top: 45px;
+    float: left;
+    height: 25px;
+    margin-left: 10px;
+    width: 125px;
+}
+.change_password button:hover{
+  cursor: pointer;
+  color: #101096;
+}
+.sign_out button:hover{
+  cursor: pointer;
+  color: #101096;;
+}
+.user_login_time{
+    font-size: 15px;
+    margin-top: -7px;
+    font-weight: normal;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #072750;
+    color: white;
+    text-align: center;
+    height: 30px;
+}
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 44px;
+    background-color: #35475e;
+}
+.header p {
+    margin-left: 200px;
+    text-transform: uppercase;
+    color: #00d0ff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+.logo {
+	height: 44px;
+	padding: 10px;
+	font-weight: 700;
+	background-color: #233245;
+	color: #fff;
+}
+.logo  i {
+	font-size: 22px;
+}
+.logo span {
+	margin-left: 5px;
+	text-transform: uppercase;
+}
+
+.side-nav {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+    height: 100vh;
+    background-color: #35475e;
+    width: 200px;
+}
+.side-nav ul {
+	margin: 0;
+	padding: 0;
+}
+.side-nav ul li {
+	border-bottom: 1px solid #3c506a;
+	position: relative;
+}
+.side-nav ul li:hover {
+    background-color: #2f4b6f;
+	cursor: pointer;
+}
+.side-nav ul li.active:before {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+}
+
+.side-nav ul li a {
+    padding: 12px 16px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+.side-nav ul li i {
+	color: #0497df;
+	min-width: 20px;
+	text-align: center;
+}
+.side-nav ul li span:nth-child(2) {
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.main-content {
+    padding: 40px;
+    margin-top: 0;
+    padding: 0;
+    padding-top: 44px;
+    height: 100%;
+    margin-left: 200px;
+    background-color: #d5dae5;
+}
+
+.main-content .titleContainer{
+	width: 100%;
+    height: 42px;
+    position: fixed;
+	background-color: #eef1f7;
+    border-bottom: 1px solid #b8bec9;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #050215;
+}
+.main-content .title {
+    width: 84%;
+}
+.sub-main{
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 45px;
+}
+.sale_bill_amount_line_chart{
+	margin-left: 15px;
+	margin-right: 15px;
+
+	border: 2px solid blue;
+}
+.widget {
+    flex-basis: 300px;
+    flex-grow: 10;
+    height: 130px;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.widget .title {
+    background-color: #35475e;
+    border-bottom: 1px solid #dfe4ec;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #f0f8ff;
+    font-weight: 600;
+   
+    width: 100%;
+}
+.rawMaterialMenuContent {
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid #c7d0e4;
+    margin-top: 70px;
+    box-shadow: 2px 0px 40px -3px #aaaaaa;
+}
+.rawMaterialMenuContent p {
+    text-align: center;
+    font-size: 20px;
+    color: #00004d;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.rawMaterialSubMenu{
+    width: 310px;
+    margin: 0 auto;
+}
+.rawMaterialSubMenu input[type=text]{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #2a229c;
+    margin-top: 10px;
+    background: #fdfdff;
+    padding-left: 10px;
+}
+.rawMaterialSubMenu input[type=date] {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #2a229c;
+    margin-top: 10px;
+    background: #fdfdff;
+    padding-left: 10px;
+    margin-left: 0px;
+}
+
+.rawMaterialSubMenu input[type=submit] {
+    border: none;
+    background-color: #1d1d7d;
+    border-radius: 25px;
+    color: white;
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+}
+.rawMaterialSubMenu input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #131365;
+    color: white;
+}
+#deleteBtn{
+	background-color: #c71c1c;
+}
+#deleteBtn:hover {
+    background-color: #a70f0f;
+}
+.rawMaterialTble {
+    width: 100%;
+    border: 1px solid #616775;
+    margin-top: 42px;
+}
+.rawMaterialTble tr{
+
+}
+.rawMaterialTble th {
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #163e71;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid;
+}
+.rawMaterialTble td {
+	padding: 0px 5px;
+    text-align: center;
+    border: 1px solid #dacece;
+	font-size: 15px;
+    font-family: sans-serif;
+}
+table.rawMaterialTble tr:nth-child(2n+1){
+	background-color: #fff;
+	height: 30px;
+
+}
+	
+	.sale_information_container {
+		flex-basis: 300px;
+		flex-grow: 10;
+		height: 300px;
+		margin: 15px;
+		border-radius: 5px;
+		background-color: white;
+	}
+	.sale_information_title{
+		background-color: cyan;
+		color: #00004d; 
+		font-size: 20px;
+	}
+	.sale_data{
+		padding:5px;
+	}
+	.sale_data table{
+		width:100%; 
+		padding: 5px;
+	}
+
+
+	table.rawMaterialTble tr:nth-child(2n){
+	background-color: #f1f1f1;
+	height: 30px;
+}
+table.rawMaterialTble tr:hover {
+    background-color: #eef1f7;
+    cursor: pointer;
+}
+/*hjhj*/
+.foodReservationUpdate {
+		width: 405px;
+		margin: 0 auto;
+	}
+	.foodUpdate{
+		width: 148px;
+	}
+	.foodDelete{
+		width: 148px;
+	}
+	.foodReservationModalTitle {
+    color: #fff;
+	}
+	.foodReservationModalHeader {
+		background-color: #008074;
+	}
+.foodReservationTable {
+    width: 100%;
+    margin-top: 42px;
+}
+
+.foodReservationTable th {
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #163e71;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid;
+}
+.foodReservationTable td {
+    padding: 0px 5px;
+    text-align: center;
+    border: 1px solid #dacece;
+}
+table.foodReservationTable tr:nth-child(2n+1){
+	background-color: #ffffff;
+	height: 30px;
+
+}
+table.foodReservationTable tr:nth-child(2n){
+	background-color: #f1f1f1;
+	height: 30px;
+}
+table.foodReservationTable tr:hover {
+    background-color: #eef1f7;
+    cursor: pointer;
+}
+
+
+.foodReservationMenuContent {
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid #c7d0e4;
+    margin-top: 70px;
+    box-shadow: 2px 0px 40px -3px #aaaaaa;
+}
+.foodReservationMsg {
+    width: 500px;
+    height: 20px;
+    margin-top: 70px;
+}
+.foodReservationSubContent {
+    width: 700px;
+    height: 361px;
+    margin: 0 auto;
+    border: 1px solid #c7d0e4;
+    margin-top: 70px;
+    box-shadow: 2px 0px 40px -3px #aaaaaa;
+}
+.foodReservationSubContent p {
+    text-align: center;
+    font-size: 20px;
+    color: #00004d;
+    font-weight: bold;
+    padding: 20px;
+}
+.foodReservationSubMenu{
+    width: 450px;
+    margin: 0 auto;
+}
+.foodReservationSubMenu input[type=text]{
+    width: 448px;
+    height: 30px;
+    border: 1px solid #2a229c;
+    margin-top: 10px;
+    background: #fdfdff;
+    padding-left: 10px;
+}
+.foodReservationSubMenu input[type=date] {
+    width: 448px;
+    height: 30px;
+    border: 1px solid #2a229c;
+    margin-top: 10px;
+    background: #fdfdff;
+    padding-left: 10px;
+    margin-left: 0px;
+}
+.foodReservationBtn{
+	width: 350px;
+	margin: 0 auto;
+}
+.foodReservationSubMenu input[type=submit] {
+	width: 220px; 
+    
+}
+
+.title input[type=submit] {
+    background-color: #163e71;
+    width: 150px;
+    border: none;
+    color: white;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    float: right;
+    height: 30px;
+    margin-top: -5px;
+}
+.toltipText {
+   visibility: hidden;
+}
+.title input[type=submit]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+    background-color: #13335d;
+}
+
+.employeeForm {
+    background-color: #eef1f7;
+	width: 850px;
+    margin: 30px auto;
+    padding: 68px 100px;
+    border-radius: 10px;
+    box-shadow: 2px 0px 40px -3px #aaaaaa; 
+}
+.employeeRegistrationInfo {
+    width: 400px;
+    height: 20px;
+    margin-top: 55px;
+}
+.employeeFormInformation{
+	width: 480px;
+	float: left;
+}
+.employeeFormInformation input[type=text], [type=email], [type=date] {
+    width: 250px;
+    margin: 5px;
+    border: none;
+    background-color: #d5dae5;
+    height: 25px;
+}
+.employeeFormInformation input[type=file] {
+    width: 250px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #d5dae5;
+    height: 30px;
+}
+.UploadPicPosition {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #cfd4de;
+    float: right;
+}
+.employeeSubmitbtn {
+    width: 120px;
+    background-color: #143eda;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin: 5px;
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.employeeClarbtn{
+    width: 120px;
+    background-color: #0a111b;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+    margin: 5px;
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.employeeSubmitbtn:hover {
+    background-color: green;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+.employeeClarbtn:hover {
+    background-color: red;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+.adminResetPstContainer {
+    background-color: white;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 300px;
+	box-shadow: 2px 0px 40px -3px #aaaaaa;
+}
+.adminResetPstContainer h2 {
+    text-align: center;
+    font-family: sans-serif;
+}
+.subAdmRstPst {
+    margin-top: 45px;
+}
+.adminResetPstContainer p {
+    text-align: center; 
+}
+.subAdmRstPst input[type=password] {
+    padding: 6px 10px;
+    margin-left: 40px;
+}
+.subAdmRstPst input[type=submit] {
+    width: 200px;
+    float: right;
+    border: none;
+    height: 25px;
+    background-color: #00004d;
+    color: white;
+}
+.subAdmRstPst input[type=submit]:hover {
+   background-color: green;
+   cursor: pointer; 
+}
+.foodMenuContent {
+    width: 700px;
+    height: 430px;
+    margin: 0 auto;
+    border: 1px solid #c4ccd6;
+    margin-top: 50px;
+    box-shadow: 2px 0px 40px -3px #aaaaaa;
+}
+.foodMenuContent p {
+    text-align: center;
+    font-size: 20px;
+    color: #00004d;
+    font-weight: bold;
+    margin-top: 100px;
+}
+.foodSubMenu {
+    width: 310px;
+    margin: 0 auto;
+}
+.foodSubMenu select, input[type=text] {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #2a229c;
+    margin-top: 10px;
+    background: #fdfdff;
+    padding-left: 10px;
+}
+
+.foodSubMenu input[type=submit] {
+    border: none;
+    background-color: green;
+    border-radius: 25px;
+    color: white;
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+}
+.foodSubMenu input[type=submit]:hover {
+    cursor: pointer; 
+	background-color: blue; 
+	color: white; 
+}
+.foodMenuTable {
+    width: 100%;
+    border: 1px solid #527eb7;
+	margin-top: 42px;
+}
+.foodMessage {
+    width: 500px;
+    height: 20px;
+    margin-top: 55px;
+}
+.rawMaterialMessage {
+    width: 500px;
+    height: 20px;
+    margin-top: 55px;
+}
+.foodMenuTable table{
+	border-left: 2px solid white; 
+	border-bottom: 2px solid white; 
+	border-right: 2px solid white;  
+}
+.foodMenuTable h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    background-color: #24e0bd;
+    padding: 10px 0px;
+    color: #00010a;
+    font-weight: bold;
+    border-bottom: 1px solid #eef1f7;
+}
+.foodMenuTable p {
+    margin: 0;
+    padding: 8px 5px;
+    font-size: 20px;
+    color: #f9f9f9;
+    background-color: #0f0f4a;
+	border-left: 2px solid #33b2e6; 
+	border-top: 2px solid #33b2e6; 
+	border-right: 2px solid #33b2e6; 
+	margin-top: 10px;
+}
+
+.foodMenuTable tr td {
+    padding: 5px 10px;
+    text-align: center;
+	border: 1px solid #dacece;
+}
+.foodMenuTable tr:nth-child(2n+1){
+	background-color: #fff;
+	height:25px;
+}
+.foodMenuTable tr:nth-child(2n){
+	background-color: #f1f1f1;
+	height:25px;
+}
+.foodMenuTable tr th {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: darkcyan;
+    border: 1px solid;
+    color: white;
+    height: 30px;
+    text-align: center;
+}
+.employeeTble {
+    width: 100%;
+    border: 1px solid #616775;
+    margin-top: 42px;
+}
+
+.employeeTble tr{
+
+}
+.employeeTble th{
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #163e71;
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid;
+}
+.employeeTble td {
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px solid #dacece;
+}
+table.employeeTble tr:nth-child(2n+1){
+	background-color: #fff;
+	height: 30px;
+
+}
+	table.employeeTble tr:nth-child(2n){
+	    background-color: #f2f2f2;
+	height: 30px;
+}
+table.employeeTble tr:hover {
+    background-color: #eef1f7;
+    cursor: pointer;
+}
+.input-group {
+    position: relative;
+    display: table;
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btnClientAdd {
+    float: right;
+    margin-top: -7px;
+}
+.material-icons{
+	font-size: 19px;
+}
+.btnClientDel {
+    float: right;
+    margin-right: 5px;
+	margin-top: -7px;
+}
+.clientBtn{
+	width: 200px;
+	
+}
+.clientViewHeader {
+	background-color: teal;
+	color: white;
+}
+.centered-modal.in {
+	display: flex !important;
+}
+.centered-modal .modal-dialog {
+	margin: auto;
+}
+textarea {
+    margin-top: 5px;
+
+}
+textarea.form-control {
+    height: auto;
+    /* border: 1px solid #2a229c; */
+}
+.clientUpdateSubContent {
+    width: 700px;
+    height: 510px;
+    margin: 0 auto;
+    border: 1px solid #c7d0e4;
+    margin-top: 15px;
+    box-shadow: 2px 0px 40px -3px #aaaaaa;
+}
+.clientUpdateSubContent p {
+    text-align: center;
+    font-size: 20px;
+    color: #00004d;
+    font-weight: bold;
+    padding: 20px;
+}
+
+
+.clientSubMenu {
+    width: 400px;
+    margin: 0 auto;
+}
+.clientSubMenu select, input[type=text] {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #2a229c;
+    margin-top: 5px;
+    background: #fdfdff;
+    padding-left: 10px;
+}
+
+.clientSubMenu input[type=submit] {
+    border: none;
+    background-color: green;
+    border-radius: 25px;
+    color: white;
+    width: 146px;
+    height: 35px;
+    margin-top: 20px;
+}
+.clientSubMenu input[type=submit]:hover {
+    cursor: pointer; 
+    background-color: blue; 
+    color: white; 
+}
+.collapsible {
+    background-color: #046565;
+    color: white;
+    padding: 6px;
+    width: 100%;
+    border: none;
+
+    font-size: 25px;
+}
+
+.activeCollapse, .collapsible:hover {
+  background-color: #057777;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.activeCollapse:after {
+  content: "\2212";
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.btnBillOrder {
+	background-color: #1d72c5;
+	border: none;
+	color: white;
+	padding: 6px 16px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.btnBillOrder:hover {
+	background-color: RoyalBlue;
+	color: white;
+}
+[type=search] {
+	outline-offset: -2px;
+	height: 27px;
+	width: 250px;
+}
+
+
